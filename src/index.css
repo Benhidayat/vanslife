@@ -2,17 +2,19 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
+html, body {
   font-family: 'Inter', sans-serif;
-  background-color:  #FFF7ED;
+  margin: 0;
+  padding: 0;
+  width: 548px;
+  height: 100vh;
 }
 
 img {
@@ -23,4 +25,39 @@ img {
 
 nav > a {
   text-decoration: none;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2em;
+  height: 110px;
+  background-color: #FFF7ED;
+
+}
+
+header h1 {
+  margin-inline-end: auto;
+  text-transform: uppercase;
+  font-size: 1.584rem;
+  line-height: 40.27px;
+  font-weight: 900;
+}
+
+h1 a {
+  color: black;
+}
+
+header .about {
+  margin-inline-end: 2rem;
+}
+
+.nav a {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 22.92px;
+  color: #4D4D4D;
 }
