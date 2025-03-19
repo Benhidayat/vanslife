@@ -18,6 +18,9 @@ const App = () => {
       <Routes>
 
       </Routes>
+      <footer>
+        <p>Ⓒ 2022 #VANLIFE</p>
+      </footer>
     </BrowserRouter>
   )
 }

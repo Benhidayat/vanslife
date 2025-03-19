@@ -61,3 +61,19 @@ header .about {
   line-height: 22.92px;
   color: #4D4D4D;
 }
+
+/* footer */
+footer {
+  background-color: #252525;
+  height: 74.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+footer p {
+  color: #AAAAAA;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 22.92px;
+}
