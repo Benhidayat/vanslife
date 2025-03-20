@@ -14,7 +14,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 548px;
-  height: 100vh;
+  height: 100%;
 }
 
 img {
@@ -60,6 +60,11 @@ header .about {
   font-weight: 600;
   line-height: 22.92px;
   color: #4D4D4D;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #161616;
 }
 
 /* footer */

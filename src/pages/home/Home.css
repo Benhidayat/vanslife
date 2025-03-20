@@ -1,4 +1,4 @@
-section {
+.home {
     height: 400px;
     display: flex;
     align-items: center;
@@ -11,14 +11,14 @@ section {
     background-size: cover;
 }
 
-section h2 {
+.home h2 {
     font-size: 2.25rem;
     font-weight: 800;
     line-height: 42px;
     color: #FFFFFF;
 }
 
-section p {
+.home p {
     font-size: 1rem;
     line-height: 24px;
     font-weight: 500;
@@ -26,7 +26,7 @@ section p {
     margin-block-end: 3rem;
 }
 
-section button {
+.home button {
     width: 494.33px;
     height: 49.83px;
     border-radius: 5px;

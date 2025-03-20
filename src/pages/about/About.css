@@ -1,0 +1,60 @@
+.about-page {
+    background-color: #FFF7ED;
+    padding-block-end: 4em;
+}
+
+.about-page .hero-image {
+    background-image: url(../../assets/abouthero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 233.21px;
+    margin-block-end: 4rem;
+}
+
+.about-page-content {
+    width: 494px;
+    margin-inline: auto;
+    margin-block-end: 4rem;
+}
+
+.about-page-content h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #161616;
+}
+
+.about-page-content p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #161616;
+}
+
+.about-page-cta {
+    background-color: #FFCC8D;
+    border-radius: 5px;
+    padding: 2em;
+    margin-inline: auto;
+    width: 494px;
+}
+
+.about-page-cta h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: #161616;
+}
+
+.about-page-cta button {
+    width: 174px;
+    height: 49px;
+    border-radius: 10px;
+    background-color: #161616;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: .997rem;
+    line-height: 23.92px;
+    color: #ffffff;
+}
