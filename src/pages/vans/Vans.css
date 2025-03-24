@@ -1,0 +1,82 @@
+.vans-page {
+  background-color: #FFF7ED;
+}
+
+.van-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: centers;
+    gap: 1.5rem;
+    padding: 1.5em;
+    cursor: pointer;
+}
+
+.van-container a {
+    text-decoration: none;
+}
+
+.van-container img {
+    border-radius: 5px;
+}
+
+.van-container h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 31.66px;
+    color: #161616;
+}
+
+.details .price {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 31.66px;
+    color: #161616;
+}
+
+.van-container .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price > span {
+    font-size: .872rem;
+    font-weight: 500;
+    line-height: 31.66px;
+}
+
+.van-type {
+    height: 34px;
+    padding: 6px 26px;
+    background-color:#FFEAD0;
+    border-radius: 5px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.66px;
+    font-size: 1rem;
+    color:#4D4D4D;
+}
+
+.van-type:hover {
+    color: #FFEAD0;
+}
+
+.van-type.selected {
+    color: #FFEAD0;
+}
+
+.van-type.simple:hover, 
+.van-type.simple.selected {
+    background-color: #E17654;
+}
+
+.van-type.rugged:hover,
+.van-type.van-type.rugged.selected {
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover,
+.van-type.luxury.selected {
+    background-color: #161616;
+}

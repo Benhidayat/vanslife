@@ -1,0 +1,52 @@
+.van-details-container {
+    background-color: #FFF7ED;
+}
+
+.van-details {
+    width: 497px;
+    margin-inline: auto ;
+}
+
+.van-details img {
+    border-radius: 5px;
+    margin-block-end: 3rem;
+}
+
+.van-details h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 33.65px;
+}
+
+.van-details .van-price {
+    font-size: 1.5rem;
+    line-height: 44.15px;
+    font-weight: 700;
+}
+
+.van-price span {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.van-description {
+    font-size: 1rem;
+    line-height: 23.92px;
+    font-weight: 500;
+}
+
+.van-details .link-button {
+    width: 100%;
+    height: 49px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF8C38;
+    margin-block-end: 2rem;
+    cursor: pointer;
+
+    font-size: 1.125rem;
+    line-height: 31.66px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: inherit;
+}

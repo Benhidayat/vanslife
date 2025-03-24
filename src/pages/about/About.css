@@ -3,7 +3,8 @@
     padding-block-end: 4em;
 }
 
-.about-page .hero-image {
+.about-page
+ .hero-image {
     background-image: url(../../assets/abouthero.png);
     background-repeat: no-repeat;
     background-size: cover;
