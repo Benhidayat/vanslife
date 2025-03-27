@@ -1,0 +1,9 @@
+.van-pricing-page h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 21.46px;
+}
+
+.van-pricing-page h4 > span {
+    font-size: 1rem;
+}

@@ -1,0 +1,81 @@
+.current-page-container {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 5px;
+    margin-block-start: 2rem;
+}
+
+.current-van-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block-end: 1.5rem;
+}
+
+.current-van-container img {
+    width: 160px;
+    height: auto;
+    border-radius: 5px;
+    margin-inline-end: 1rem;
+}
+
+.current-page-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.current-page-text i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-page-text h2 {
+    margin-block: 1rem;
+    font-size: 1.629rem;
+    font-weight: 700;
+    line-height: 27.4px;
+    color: #161616;
+}
+
+.current-page-text p {
+    font-size: 1.221rem;
+    line-height: 35.95px;
+    font-weight: 700;
+}
+
+.current-page-text p > span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.van-detail-page {
+    padding-block-start: 2rem;
+}
+
+.van-detail-page .back-button {
+    font-size: 0.997rem;
+    line-height: 22.92px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.current-nav {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.current-nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20.57px;
+    text-decoration: none;
+    color: #161616;
+    margin-block-end: 2rem;
+}
+
+.current-nav a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}

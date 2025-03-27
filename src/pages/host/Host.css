@@ -1,0 +1,24 @@
+.host-page {
+    background-color: #FFF7ED;
+    padding: 2em;
+}
+
+.host-page nav > a {
+    margin-inline-end: 1rem;
+    font-size: 1.125rem;
+    line-height: 22.92px;
+    font-weight: 600;
+    color: #161616;
+}
+
+.host-page nav {
+    margin-block-end: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus {
+    font-weight: 900;
+}
