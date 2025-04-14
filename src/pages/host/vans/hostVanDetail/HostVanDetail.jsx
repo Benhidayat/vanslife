@@ -1,35 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { useLoaderData} from 'react-router-dom';
 import { Link, NavLink, Outlet } from 'react-router-dom';
+import { getHostVans } from '../../../../api';
+import { requireAuth } from '../../../../utils';
 import './HostVanDetail.css';
 
+export const loader = async ({params, request}) => {
+    await requireAuth(request);
+    return getHostVans(params.id);
+}
+
 const HostVanDetail = () => {
-    const { id } = useParams();
-    const [currentVan, setCurrentVan] = useState(null);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch(`/api/host/vans/${id}`);
-
-                if (!res.ok) {
-                    throw new Error('could not fetch resource');
-                }
-                const data = await res.json()
-                setCurrentVan(data.vans[0]);
-            }
-            catch(error) {
-                console.log(error);
-            }
-        }
-        fetchData();
-    },[id]);
-
-    if (!currentVan) {
-        return (
-            <h2>Loading...!</h2>
-        )
-    }
+    const currentVan = useLoaderData()[0];
 
     const activeStyles = {
         fontWeight: '700',

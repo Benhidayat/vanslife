@@ -1,5 +1,14 @@
 .vans-page {
   background-color: #FFF7ED;
+  padding: 1.5em;
+
+}
+
+.vans-page h2 {
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+    line-height: 33.65px;
+    font-weight: 700;
 }
 
 .van-list {
@@ -7,7 +16,6 @@
     grid-template-columns: 1fr 1fr;
     justify-items: centers;
     gap: 1.5rem;
-    padding: 1.5em;
     cursor: pointer;
 }
 
@@ -79,4 +87,27 @@
 .van-type.luxury:hover,
 .van-type.luxury.selected {
     background-color: #161616;
+}
+
+.van-list-filter {
+    display:  flex;
+    column-gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block-end: 2rem;
+}
+
+.van-list-filter a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.van-list-filter .rugged {
+    margin-inline-end: auto;
+}
+
+.van-list-filter .filter {
+    text-decoration: underline;
 }

@@ -1,43 +1,49 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Suspense } from 'react';
+import { Link, useLoaderData, Await } from 'react-router-dom';
+import { getHostVans } from '../../../api';
+import { requireAuth } from '../../../utils';
 import './HostVans.css';
 
-const HostVans = () => {
-    const [listedVans, setListedVans] = useState(null);
+export const loader = async ({ request }) => {
+    await requireAuth(request);
+    // deferring data to make loading state
+    return {
+        vans: getHostVans()
+    };
+}
 
-    useEffect(() => {
-        const getData = async () => {
-            try {
-                const response = await fetch('/api/host/vans');
-                if(!response.ok) {
-                    throw new Error('could not fetch resource');
-                }
-                const data = await response.json();
-                setListedVans(data.vans);
-            }
-            catch(error) {
-                console.log(error);
-            }
-        }
-        getData()
-    },[]);
+const HostVans = () => {
+    // data from loader
+    const listedVans = useLoaderData();
+
+    const renderHostVans = (loadedVans) => {
+        const hostVanElms = loadedVans.map(van => {
+            return (
+                <Link to={van.id} className='listed-van'>
+                    <img src={van.imageUrl} alt={van.name} />
+                    <div className='listed-van-text'>
+                        <p className="name">{van.name}</p>
+                        <p className="price">{van.price}</p>
+                    </div>
+                </Link>
+            )
+        })
+
+        return (
+            <div className="listed-van-container">
+                {hostVanElms}
+            </div>
+        )
+    }
 
   return (
     <section className="listed-page">
         <h2>Your listed vans</h2>
-        <div className="listed-vans-container">
-            {listedVans ? listedVans.map(van => {
-                return (
-                    <Link to={`/host/vans/${van.id}`} key={van.id} className="listed-van">
-                        <img src={van.imageUrl} alt={van.name} />
-                        <div className="listed-van-text">
-                            <p className="name">{van.name}</p>
-                            <p className="price">${van.price}/day</p>
-                        </div>
-                    </Link>
-                )
-            }) : 'Loading...!'}
-        </div>
+        <Suspense fallback={<h2>Loading vans...</h2>}>
+            <Await resolve={listedVans.vans}>
+                {renderHostVans}
+            </Await>
+        </Suspense>
     </section>
   )
 }

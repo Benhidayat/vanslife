@@ -1,0 +1,27 @@
+.error-page {
+    padding: 4em 2em;
+    background-color: #FFF7ED;
+}
+
+.error-page h2 {
+    font-size: 2rem;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.error-page a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 55px;
+    background-color: #161616;
+
+    font-size: 1.125rem;
+    line-height: 31.66px;
+    font-weight: 700;
+    color: #ffffff;
+
+    border-radius: 5px;
+}
